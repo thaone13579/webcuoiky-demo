@@ -1,0 +1,249 @@
+/* Breadcrum */
+
+.news-breadcrumb {
+    padding: 3.5% 0%;
+}
+
+.news-breadcrumb-list {
+    list-style: none;
+}
+
+.news-breadcrumb-list li.news-breadcrumb-1,
+.news-breadcrumb-list li.news-breadcrumb-2,
+.news-breadcrumb-list li a {
+    display: inline;
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+}
+
+.news-breadcrumb-list li.news-breadcrumb-3 {
+    display: inline;
+    font-size: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.news-breadcrumb-list li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+
+/* Grid column */
+
+.grid_column-2-part-3 {
+    padding-top: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 66.66%;
+}
+
+.grid_column-1-part-3 {
+    padding-left: 20px;
+    padding-right: 5px;
+    width: 33.33%;
+}
+
+.news-grid_column-5-5 {
+    padding: 1% 1%;
+    width: 50%;
+    position: relative;
+}
+
+.grid_column-2-part-3 h2 {
+    font-size: 300%;
+    padding-bottom: 2%;
+}
+
+p.news-header-posts {
+    font-size: 80%;
+    color: rgb(160, 155, 155);
+    padding-bottom: 2%;
+}
+
+p.news-header-content {
+    font-size: 110%;
+    text-align: justify;
+    padding-bottom: 4%;
+}
+
+.news-display-flex {
+    display: flex;
+    border: 1px solid #e9ecef;
+}
+
+.news-item-title,
+.news-item-content {
+    padding-top: 3%;
+}
+
+.news-item a.tag {
+    text-decoration: none;
+    color: black;
+    font-size: 60%;
+    font-weight: bold;
+}
+
+.news-item-title a.title {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.news-item-content a.content {
+    text-decoration: none;
+    text-align: justify;
+}
+
+.author-datetime .datetime,
+.author-datetime a.author {
+    font-size: 70%;
+    text-decoration: none;
+}
+
+li.news-author-item {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 3%;
+}
+
+li.news-tag-item {
+    position: relative;
+    line-height: 2;
+}
+
+#wrapper-90 {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px;
+    margin-bottom: 30px;
+    margin-top: 0.3%;
+}
+
+ul.news-list {
+    list-style: none;
+}
+
+ul.news-list li>.news-item>a.tag:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 26%;
+    height: 3px;
+    background-color: red;
+    transition: 0.25s;
+    margin-top: 10%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Form */
+
+.background-form-news {
+    background-color: #F2F2F3;
+    border-radius: 6px;
+}
+
+.padding-form-news {
+    padding: 5% 5% 5% 5%;
+}
+
+.form-news-text {
+    font-weight: 700;
+    font-size: 130%;
+    margin-left: 6.5%;
+}
+
+.form-news-content {
+    font-weight: bold;
+    text-align: justify;
+    font-size: 100%;
+}
+
+ul.style-form-news {
+    list-style: none;
+}
+
+li.padding-item {
+    padding-bottom: 5%;
+}
+
+li.padding-text {
+    padding-top: 0%;
+}
+
+li.padding-item>h4 {
+    font-size: bold;
+}
+
+input.form-news-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 12px 12px;
+    border-color: red;
+}
+
+.form-news2-subcribe-button {
+    display: flex;
+    align-items: center;
+}
+
+.form-news2-subcribe-button a {
+    text-decoration: none;
+}
+
+.form-news2-subcribe-button a.button {
+    display: inline-block;
+    margin-top: 2%;
+    margin-right: 10%;
+    padding: 3%;
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(250, 54, 54);
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 2.5% 40%;
+    margin-bottom: 5%;
+}
+
+.form-news2-subcribe-button a.button:hover {
+    background-color: #333;
+}
+
+.form-news2-subcribe-button button:hover {
+    background-color: #333;
+}
+
+a.tag:hover,
+a.title:hover {
+    color: rgb(114, 109, 109);
+}
+
+a.author:hover {
+    color: red;
+}
+
+.padding-form-news {
+    margin-top: 11%;
+}
+
+.checkbox-text {
+    text-align: justify;
+    font-size: 80%;
+}

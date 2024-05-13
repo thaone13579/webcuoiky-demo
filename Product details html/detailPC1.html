@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/chitietsp.css">
+    <link rel="stylesheet" href="../CSS/fliter.css">
+    <script language="javascript" src="../Javascript/fliter.js"></script>
+    <script language="javascript" src="../Javascript/login.js"></script>
+    <link rel="shortcut icon" href="images/Logo/LOGOWEB.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KZONE</title>
+</head>
+
+<body onload="logined()">
+
+
+    <!-- Header with search -->
+    <div class="header_withsearch">
+        <div class="header_logo">
+            <a href="../index.html">
+                <img src="/images/Logo/promantic.png" alt="" class="header_logo_img" width="250" height="250">            </a>
+        </div>
+        <div class="header_search">
+            <!-- <input type="text" placeholder="Search" class="header_search_input">  -->
+            <div class="fliter-dropdown">
+                <div id="myDropdown" class="fliter-dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="../Sale.html">
+                        <i class="fas fa-list"></i> Hot Products
+                    </a>
+                    <a href="../PC.html">
+                        <i class="fas fa-list"></i> Hi-end PC
+                    </a>
+                    <a href="../Laptop.html">
+                        <i class="fas fa-list"></i> Laptop Gaming
+                    </a>
+                    <a href="../Monitor.html">
+                        <i class="fas fa-list"></i> Monitor
+                    </a>
+
+                    <a href="../Product details html/detailLap3.html">
+                        <i class="fas fa-laptop"></i> ASUS TUF Dash F15
+                    </a>
+                    <a href="../chitietsanpham.html">
+                        <i class="fas fa-laptop"></i> Laptop ACER Aspire 5
+                    </a>
+                    <a href="../Product details html/detailLap2.html">
+                        <i class="fas fa-laptop"></i> Lenovo IdeaPad Gaming 3
+                    </a>
+                    <a href="../Product details html/detailLap1.html">
+                        <i class="fas fa-laptop"></i> Lenovo Legion 5
+                    </a>
+
+                    <a href="../Product details html/detailPC3.html">
+                        <i class="fas fa-mobile"></i> Alienware Aurora R12
+                    </a>
+                    <a href="../Product details html/detailPC2.html">
+                        <i class="fas fa-mobile"></i> CyberPowerPC Infinity X109 Gaming PC
+                    </a>
+                    <a href="../Product details html/detailPC1.html">
+                        <i class="fas fa-mobile"></i> HP Omen i5 10400F RTX 2060
+                    </a>
+                </div>
+            </div>
+
+          
+        </div>
+        <div class="header_search_btn">
+            <a href="#">
+                <i class="header_search_btn_icon fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header_cart">
+            <a href="#" onclick="return showDialogCart()"><i style="color:#ffa500;" class="header_cart_icon fas fa-shopping-cart"><span class="number_cart">0</span></i></a>
+            <p>Shopping-Cart</p>
+        </div>
+        <div class="header_account">
+            <a href="../dangnhap.html"><i style="color:#ffa500;" class="header_account_icon fas fa-user-circle"></i></a>
+            <p>Đăng nhập / Đăng ký</p>
+        </div>
+        <div class="header_phone">
+            <a href="#"><i style="color:#ffa500;" class="header_phone_icon fas fa-phone"></i></a>
+            <p>(078)-880 605</p>
+        </div>
+    </div>
+
+    <!--Navigation -->
+
+    <div class="navigation">
+        <div id="wrapper-navigation">
+            <div class="header-grid">
+                <div class="grid_row">
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="../index.html" class="navigation-font header-list">
+                                    <i class="fas fa-home"></i> Trang Chủ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="../Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-list"></i> Sản Phẩm
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-content-block" href="../Sale.html">Sản phẩm HOT</a>
+                                    <a href="../PC.html">PC cấu hình cao</a>
+                                    <a href="../Laptop.html">Laptop Gaming</a>
+                                    <a href="../Monitor.html">Màn hình</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="../news.html" class="navigation-font">
+                                    <i class="far fa-newspaper"></i> Mới
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="../Sale.html" class="navigation-font">
+                                    <i class="fas fa-tags"></i> Khuyến Mãi
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-info-circle"></i> Liên Hệ
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="contactus.html">Thông Tin Liên Hệ</a>
+                                    <a href="aboutus.html">Về Chúng Tôi</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Extend Button + Icon Bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+    </div>
+    <button id="page_btn" title="Lên đầu trang">
+        <i class="page_btn_icon fas fa-chevron-up"></i>
+    </button>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                document.getElementById("page_btn").style.display = "block";
+            } else {
+                document.getElementById("page_btn").style.display = "none";
+            }
+        }
+
+        document.getElementById('page_btn').addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+    <div class="chat_btn">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
+            <img class="chat_btn_a_img" src="../images/Icon/facebook-messenger-3691247-3073767.png">
+        </a>
+    </div>
+
+
+    <!-- Breadcrum -->
+    <div class="breadcrumb">
+        <ul class="breadcrumb-list">
+            <li class="breadcrumb-1">
+                <a href="../index.html">Trang Chủ</a><span> ></span>
+            </li>
+            <li class="breadcrumb-2">
+                <a href="../PC.html">PC</a><span> ></span>
+            </li>
+            <li class="breadcrumb-3">HP Omen</li>
+        </ul>
+    </div>
+
+    <!-- Banner -->
+    <div id="wrapper-banner">
+        <div class="product-details-banner">
+            <img class="mySlides" src="../images/Banner/bannerMsi.png" style="width:100%">
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Chi tiết sản phẩm</h2>
+        </div>
+    </div>
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+
+
+    <div id="wrapper">
+        <div class="products-padding">
+            <h2 class="products-details-header">HP Omen</h2>
+
+            <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5">
+                        <ul class="products-details-no-style">
+                            <li class="justify-text">
+                                <p>
+                                    Thông số phần cứng của PC chơi game HP Omen F15:
+                                </p>
+                                <br>
+                                <ul>
+                                    <li>Intel Core i5 10400F Quad-Core Processor (Turbo up to 4.8GHz)</li>
+                                    <li>16GB HyperX DDR4-2666 RAM</li>
+                                    <li>512GB PCIe NVMe SSD</li>
+
+                                    <li>Nvidia GeForce RTX 2060 Ti 4GB DDR6 Graphics</li>
+                                    <li>Màn hình tốc độ làm mới 144Hz loại Full HD IPS 15,6 inch có tính năng Đồng bộ hóa thích ứng (62% sRGB, 280 nit)</li>
+                                    <li>Windows 10 Home</li>
+
+                                    <li>256GB M.2 SSD, 1TB HDD</li>
+                                    <li>Sober thrill-free designed </li>
+                                    <li>Bàn phím tuyệt vời để gõ và chơi game</li>
+
+                                    <li>Dễ nâng cấp</li>
+                                    <li>Số lượng cổng khá lớn (bao gồm cả Thunderbolt 4 nhanh nhất)</li>
+                                    <li>Các thành phần mạnh mẽ </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5 ">
+                        <ul class="products-details-no-style">
+                            <li><img src="../images/Product details/detailPC1.png" width="100%"></img>
+                            </li>
+                            <li>
+                                <div class="products-details-price">
+                                    <span class="home-products-price-old-price">9.000.000₫</span>
+                                    <span class="home-products-price-new-price">8.000.000₫</span>
+                                </div>
+                            </li>
+                            <li>
+                                <ul class="products-details-no-style">
+                                    <li class="padding-item">
+                                        <div class="product-details-button">
+                                            <a href="#" class="button1">Mua Ngay</a>
+                                            <a href="#" class="add-to-cart">Thêm Vào Giỏ Hàng</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="products-details-header2">Một số thông tin chi tiết về HP Omen - PC chơi game tốt nhất giá dưới 20.000.000₫</h2>
+
+        <div class="products-padding">
+            <div class="header-banner-grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5 ">
+                        <ul class="products-details-no-style">
+                            <li class="justify-text">
+                                <p>
+                                    Hewlett Packard đã có mặt từ trước Thế chiến thứ hai và chuyên môn lịch sử đó được thể hiện rõ trong thiết kế và cấu tạo của máy tính để bàn Omen 25L và 30L. Omen 25L có khả năng tùy biến cao, bắt đầu với RTX 2060 và Core i5
+                                     10400F và nâng cấp lên Core i9 và RTX 2080 Super.
+                                </p>
+                                <br>
+                                <p>
+                                    Có lẽ điểm ấn tượng nhất của Omen 25L chính là mức giá. Mặc dù có thẻ RTX và CPU mạnh mẽ đó (cũng như RAM 16 GB, ổ SSD 256 GB và ổ cứng 2TB), nó chỉ có giá 27.000.000₫. Điều này chủ yếu là do HP đã cắt bỏ tất cả các
+                                     những chi tiết rườm rà không cần thiết có xu hướng làm tăng giá của một số máy có thông số kỹ thuật tương tự.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5 ">
+                        <img src="../images/Product details/moreDetailPC1.png" width="100%"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Sản phẩm mới của chúng tôi</h2>
+        </div>
+        <div class="home">
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/PC/newPC6.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Mua Ngay</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> Mới
+                    </div>
+                </div>
+                <div class="home-products-cat">PC</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Ratchet M - I5 11400F - GT2060 - 16GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">16.600.000₫</span>
+                </div>
+            </div>
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/Monitor/newmonitor6.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Mua Ngay</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> Mới
+                    </div>
+                </div>
+                <div class="home-products-cat">Màn Hình</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Monitor Gaming Asus ROG STRIX XG27UQ IPS/ 4K/ 144Hz</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">11.900.000₫</span>
+                </div>
+            </div>
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/Laptop/Laptop6.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Mua Ngay</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> Mới
+                    </div>
+                </div>
+                <div class="home-products-cat">PC</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Titan M - G6405 - GT1030 - 8GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">10.700.000₫</span>
+                </div>
+            </div>
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/PC/newPC8.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Mua Ngay</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> Mới
+                    </div>
+                </div>
+                <div class="home-products-cat">PC</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Volibear S - I8 11400F - GTX 1650Ti - 16GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">23.700.000₫</span>
+                </div>
+            </div>
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/Laptop/Laptop7.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Mua Ngay</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> Mới
+                    </div>
+                </div>
+                <div class="home-products-cat">Laptop</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Laptop Asus X413JA 90NB0RC8 - I9 - 240hz - 16GB</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">26.000.000₫</span>
+                </div>
+            </div>
+            <div class="home-products">
+                <div class="product-top">
+                    <a href="../chitietsanpham.html">
+                        <img class="home-products-img" src="../images/Laptop/Laptop8.png"></img>
+                    </a>
+                    <a class="buy-now" href="../giohang.html">Mua Ngay</a>
+                    <div class="home-products-hot">
+                        <i class="fas fa-check"></i> Mới
+                    </div>
+                </div>
+                <div class="home-products-cat">Laptop</div>
+                <a href="../chitietsanpham.html">
+                    <h4 class="home-products-name">Laptop Asus Vivobook M513UA-L1240T - AMD Ryzen 7</h4>
+                </a>
+                <div class="home-products-price">
+                    <span class="home-products-price-new-price">45.000.000₫</span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="all-products">
+            <a href=""> See more </a>
+        </div>     -->
+    </div>
+
+
+    <script src="../Javascript/details/detailPC1.js"></script>
+
+
+    <!-- Group Logo -->
+    <br>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="wrapper-footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5">
+                        <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
+                        <ul class="footer-list">
+                            <li class="footer_super_heading2">
+                                <p>Be the first to hear about the latest offers.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5">
+                        <div class="footer_search_bar">
+                            <input type="text" placeholder="Your Email" class="search_text">
+                            <button style="border:none">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Infomation</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="aboutus.html" class="footer-item_link">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Terms</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="contactus.html" class="footer-item_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">PC Parts</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Add On Cards</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hard Driver (Internal)</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Graphic Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Desktop PCs</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Custom PCs</a>
+                            </li>
+<li class="footer-item">
+                                <a href="" class="footer-item_link">Severs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tecs PCs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Laptops</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MSI Series</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">DELL Series</a>
+                                <a href="" class="footer-item_link">ACER Series</a>
+                            </li>
+                            <a href="" class="footer-item_link">ASUS Series</a>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MAC Series</a>
+                                </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Address</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-address">Address: 14 Nguyen Van Bao Str, District 4, Ho Chi Minh City</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">Phone:
+                                    <font color="#056ebe">(076) 880605</font>
+                                </p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">E-mail:
+                                    <font color="#056ebe">kzone@gmail.com</font>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <hr width="100%">
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-icon_link">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#" class="footer-icon_link">
+
+<i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <div class="footer-paidcard">
+                                    <img src="images/Logo/paypal.png" alt="">
+                                    <img src="images/Logo/visa.png" alt="">
+                                    <img src="images/Logo/maestro.png" alt="">
+                                    <img src="images/Logo/discover.png" alt="">
+                                    <img src="images/Logo/american-express.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-copyright">Copyright © 2024 By KZONE</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

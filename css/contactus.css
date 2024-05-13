@@ -1,0 +1,163 @@
+#wrapper_6 {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px;
+    margin-bottom: 0.2%;
+    margin-top: 0.2%;
+}
+
+.form-feedback-summit input:hover {
+    background-color: #333;
+}
+
+.form-feedback-summit input {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 1%;
+    font-size: 100%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(188, 58, 7);
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.form-feedback-summit input:hover {
+    color: rgb(184, 40, 8);
+    background-color: rgb(78, 76, 76);
+}
+
+.form-feedback-summit input {
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: block;
+    margin: 40px auto 0 auto;
+    border-radius: 12px;
+}
+
+.padding-item.feedback-name {
+    padding-bottom: 5%;
+}
+
+.form-feedback-name {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.form-feedback-first-input {
+    width: 100%;
+    height: 50px;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.form-feedback-last-input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.form-feedback-email-input {
+    width: 48.5%;
+    height: 50px;
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.padding-text.feedback-last-name {
+    padding-bottom: 5%;
+}
+
+.background-form-infor {
+    background-color: #fcf3bc;
+    border-radius: 12px;
+}
+
+.padding-form-infor {
+    padding: 5% 5% 5% 5%;
+}
+
+ul.style-form-infor {
+    list-style: none;
+}
+
+li.padding-text {
+    padding-top: 0%;
+}
+
+li.padding-item {
+    padding-bottom: 5%;
+}
+
+li.padding-item>h4 {
+    font-size: bold;
+}
+
+li.padding-text>h5 {
+    font-style: none;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+.form-feedback-describe-input {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 12px 12px;
+    border: 1px solid rgb(162, 166, 176);
+}
+
+#province {
+    width: 100%;
+    padding: 2% 0;
+}
+
+p.form-infor-text {}
+
+p.feedback-title {
+    font-size: 140%;
+}
+
+ul.style-form-feedback {
+    list-style: none;
+}
+
+label.feedback-types-button {
+    font-size: 110%;
+    margin-right: 13%;
+}
+
+label.feedback-types-button input {
+    width: 16px;
+    height: 16px;
+}
+
+.feedback-types {
+    display: inline;
+}
+
+.feedback-small-text {
+    font-size: 120%;
+    font-weight: 600;
+    padding: 2% 0;
+}
+
+a.facebook-info {
+    text-decoration: none;
+    color: blue;
+}
+
+a.facebook-info:hover {
+    text-decoration: underline;
+    color: red;
+}

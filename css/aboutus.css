@@ -1,0 +1,128 @@
+
+/* Grid column */
+/* Reset CSS */
+*
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrapper-about-us {
+    width: 60%;
+    height:auto;
+    margin: 0 auto;
+    border: 1px;
+    margin-bottom:30px;
+    margin-top: 0.3%;
+}
+#wrapper-about-team {
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+    border: 1px;
+    margin-bottom:1%;
+    margin-top: 0.3%;
+}
+
+/* Member Form */
+.about-title{
+    font-size: 230%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.background-form-about{
+    background-color: #f6f0c9;
+    border-radius: 50px;
+    
+}
+
+.avatar-member{
+    width: 100%;
+    padding: 10% 20% 0% 20%;
+    border: 1px bold;
+}
+
+.infomation-member-form{
+    list-style: none;
+    padding-left: 15%;
+    padding-top: 7%;
+}
+.member-title{
+    font-weight: bold;
+    font-size: 120%;
+    color:#fafad2 (27, 79, 114)
+}
+.member-info{
+    font-size: 102%;
+    color: rgb(58, 66, 70);
+    text-align: right;
+}
+.margin-member-text{
+    padding-bottom: 5%;
+
+}
+.image-member{
+    border-radius:100%;
+}
+
+/* Information Project Form */
+.header-info-project{
+    text-align: center;
+    color:rgb(27, 79, 114)
+}
+.project-form{
+    list-style: none;
+    padding-left: 5%;
+}
+.margin-project-text{
+    padding-bottom: 3%;
+}
+.project-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(159, 18, 2)
+}
+.project-info{
+    padding-left: 15px;
+}
+.about-title{
+    text-align: center;
+    color:rgb(172, 47, 6)
+}
+.project-title-1{
+    text-align:center;
+    font-size: 1.2rem;
+    color:rgb(27, 79, 114);
+    padding-bottom: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.project-info-name-1{
+    font-weight: bold;
+    text-align: center;
+}
+.project-info-name-1:hover{
+    color: red;
+    
+}
+.project-web{
+    text-decoration: none;
+    color: rgb(83, 77, 77);
+}
+.info-padding-text{
+    padding-left: 7%;
+    list-style: disc;
+}
+.project-web:hover{
+    color: red;
+}
+
+p.team-info{
+    font-size: 120%;
+}
+.margin-team-text{
+    margin: 0% 6% 1% 1%;
+    text-align: justify;
+}

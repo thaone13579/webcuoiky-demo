@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/danhmucsp.css">
+    <link rel="stylesheet" href="./CSS/fliter.css">
+    <script language="javascript" src="Javascript/fliter.js"></script>
+    <script language="javascript" src="Javascript/login.js"></script>
+    <link rel="shortcut icon" href="images/Logo/LOGOWEB.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>KZONE</title>
+</head>
+
+<body onload="logined()">
+    <div class="header_withsearch">
+        <div class="header_logo">
+            <a href="index.html">
+                <img src="/images/Logo/promantic.png" alt="" class="header_logo_img" width="250" height="250">            </a>
+        </div>
+        <div class="header_search">
+            <div class="fliter-dropdown">
+                <div id="myDropdown" class="fliter-dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="Sale.html">
+                        <i class="fas fa-list"></i> Sản phẩm HOT
+                    </a>
+                    <a href="PC.html">
+                        <i class="fas fa-list"></i> PC cấu hình cao
+                    </a>
+                    <a href="Laptop.html">
+                        <i class="fas fa-list"></i> Laptop Gaming
+                    </a>
+                    <a href="Monitor.html">
+                        <i class="fas fa-list"></i> Màn hình
+                    </a>
+
+                    <a href="Product details html/detailLap3.html">
+                        <i class="fas fa-laptop"></i> ASUS TUF Dash F15
+                    </a>
+                    <a href="chitietsanpham.html">
+                        <i class="fas fa-laptop"></i> Laptop ACER Aspire 5
+                    </a>
+                    <a href="Product details html/detailLap2.html">
+                        <i class="fas fa-laptop"></i> Lenovo IdeaPad Gaming 3
+                    </a>
+                    <a href="Product details html/detailLap1.html">
+                        <i class="fas fa-laptop"></i> Lenovo Legion 5
+                    </a>
+
+                    <a href="Product details html/detailPC3.html">
+                        <i class="fas fa-mobile"></i> Alienware Aurora R12
+                    </a>
+                    <a href="Product details html/detailPC2.html">
+                        <i class="fas fa-mobile"></i> CyberPowerPC Infinity X109 Gaming PC
+                    </a>
+                    <a href="Product details html/detailPC1.html">
+                        <i class="fas fa-mobile"></i> HP Omen i5 10400F RTX 2060
+                    </a>
+                </div>
+            </div>
+
+        
+        </div>
+        <div class="header_search_btn">
+            <a href="#">
+                <i class="header_search_btn_icon fas fa-search"></i>
+            </a>
+        </div>
+        <div class="header_cart">
+            <a href="#" onclick="return showDialogCart()"><i style="color:#ffa500;" class="header_cart_icon fas fa-shopping-cart"><span class="number_cart">0</span></i></a>
+            <p>Giỏ hàng</p>
+        </div>
+        <div class="header_account">
+            <a href="dangnhap.html"><i style="color:#ffa500;" class="header_account_icon fas fa-user-circle"></i></a>
+            <p>Đăng nhập / Đăng ký</p>
+        </div>
+        <div class="header_phone">
+            <a href="#"><i style="color:#ffa500;" class="header_phone_icon fas fa-phone"></i></a>
+            <p>(078)-880605</p>
+        </div>
+    </div>
+    <div class="navigation">
+        <div id="wrapper-navigation">
+            <div class="header-grid">
+                <div class="grid_row">
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="index.html" class="navigation-font header-list">
+                                    <i class="fas fa-home"></i> Trang chủ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-list"></i> Sản phẩm
+                                </a>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-content-block" href="Sale.html">Sản phẩm HOT</a>
+                                    <a href="PC.html">PC cấu hình cao</a>
+                                    <a href="Laptop.html">Laptop Gaming</a>
+                                    <a href="Monitor.html">Màn hình</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="news.html" class="navigation-font">
+                                    <i class="far fa-newspaper"></i> Tin tức
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li>
+                                <a href="" class="navigation-font">
+                                    <i class="fas fa-tags"></i> Khuyến mãi
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="header-grid_column-2-4">
+                        <ul class="header-list">
+                            <li class="dropdown">
+                                <a href="Laptop.html" class="dropbtn navigation-font">
+                                    <i class="fas fa-info-circle"></i> Liên hệ
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="contactus.html">Thông tin liên hệ</a>
+                                    <a href="aboutus.html">Về chúng tôi</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <ul class="breadcrumb-list">
+            <li class="breadcrumb-1">
+                <a href="index.html">Home</a><span> ></span>
+            </li>
+            <li class="breadcrumb-2">Sale<span> </span></li>
+        </ul>
+    </div>
+    <div id="wrapper-banner">
+        <div class="product-details-banner">
+            <img class="mySlides" src="images/Banner/bannerMsi.png" style="width:100%">
+        </div>
+    </div>
+
+    <hr style="width:50%;margin-left:auto;margin-right:auto">
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fa fa-google"></i></a>
+    </div>
+    <button id="page_btn" title="Lên đầu trang">
+        <i class="page_btn_icon fas fa-chevron-up"></i>
+    </button>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+                document.getElementById("page_btn").style.display = "block";
+            } else {
+                document.getElementById("page_btn").style.display = "none";
+            }
+        }
+
+        document.getElementById('page_btn').addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+    <div class="chat_btn">
+        <a href="https://www.facebook.com/khanh.quoc44/" class="chat_btn_a">
+            <img class="chat_btn_a_img" src="images/Icon/facebook-messenger-3691247-3073767.png">
+        </a>
+    </div>
+    <div class="container">
+        <div class="grid-1">
+            <div class="grid--row">
+
+                <div class="grid--column--2">
+                    <nav class="category">
+                        <h3 class="category-heading"><i class="fas fa-list"></i>Our Products</h3>
+                        <ul class="category-list">
+                            <li class="category-items category-item-active">
+                                <a href="#">Laptop</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop ASUS</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop DELL</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop ACER</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Laptop ACER</a>
+                            </li>
+                            <li class="category-items category-item-active">
+                                <a href="#">PC Gaming</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">PC Low Price</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">PC High Price</a>
+                            </li>
+                            <li class="category-items category-item-active">
+                                <a href="#">Monitor</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Monitor LG</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Monitor SamSung</a>
+                            </li>
+                            <li class="category-items">
+                                <a href="#" class="category-item-link">Monitor Sony</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="grid--column--10">
+                    <div class="headline">
+                        <h2>SALE</h2>
+                    </div>
+                    <div class="home-filter">
+                        <div id="filter">
+                            <button class="home-filter-btn btn active" onclick="filterSelection('all')">All</button>
+                            <button class="home-filter-btn btn" onclick="filterSelection('hot')">Best Seller</button>
+                            <button class="home-filter-btn btn" onclick="filterSelection('new')">New</button>
+                            <button class="home-filter-btn btn" onclick="filterSelection('all')">Price</button>
+                           
+                        </div>
+                        <div class="home-filter-page">
+                            <span class="home-filter-page-num">
+                                <span class="home-filter-page-num-current">1</span>/1
+                            </span>
+                        </div>
+                        <div class="home-filter-control">
+                            <a class="home-filter-page-btn" href="#">
+                                <i class="home-filter-page-icon fas fa-angle-left"></i>
+                            </a>
+                            <a class="home-filter-page-btn" href="#">
+                                <i class="home-filter-page-icon fas fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-all-products">
+                        <div class="grid--row">
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop1.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Laptop Aorus Eagle AN515-57-71VV i7-11800H/ 8GB/</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">11.400.000₫ </span>
+                                        <span class="home-all-products-price-new-price">10.106.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC1.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">AXE M - I3 10100F - GT730 - 8GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">13.500.000₫ </span>
+                                        <span class="home-all-products-price-new-price">12.600.000₫ </span> <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC2.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Titan M - G6405 - GT1030 - 8GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">16.500.000₫ </span>
+                                        <span class="home-all-products-price-new-price">12.700.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Monitor/newmonitor1.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Monitor</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Monitor Gaming Asus ROG STRIX XG27UQ IPS/ 4K/ 144Hz</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">19.000.000₫ </span>
+                                        <span class="home-all-products-price-new-price">17.700.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop5.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-5%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Laptop Gaming Dell Alienware m15 - R6 - 01NS i7-</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">24.000.000₫ </span>
+                                        <span class="home-all-products-price-new-price">22.700.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC3.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Ratchet M - I5 11400F - GT2060 - 16GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">21.500.000₫ </span>
+                                        <span class="home-all-products-price-new-price">19.800.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop7.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">LAPTOP LENOVO LEGION 5 PRO 16ITH6H </h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">53.200.000₫ </span>
+                                        <span class="home-all-products-price-new-price">50.600.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC4.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Garen S - I7 11700F - RTX 3070 - 16GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">53.200.000₫ </span>
+                                        <span class="home-all-products-price-new-price">50.600.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Monitor/newmonitor2.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Monitor</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Monitor Gaming Viewsonic VX2882-4KP IPS/ UHD / 150Hz</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">22.700.000₫ </span>
+                                        <span class="home-all-products-price-new-price">20.200.000₫ </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Monitor/newmonitor3.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-10%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Monitor</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Monitor Gaming MSI Optix MAG274QRF IPS/ WQHD/ 165HZ</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <div class="home-all-products-price">
+                                            <span class="home-all-products-price-old-price">21.300.000₫</span><br>
+                                            <span class="home-all-products-price-new-price">18.900.000₫</span>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop11.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Laptop Gaming Acer Nitro 5 EagleV i5 8GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">23.700.000₫</span><br>
+                                        <span class="home-all-products-price-new-price">21.300.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Monitor/newmonitor4.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Monitor</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Monitor Gaming LG 24GN600-B IPS/ FullHD/ 144Hz</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">17.800.000₫</span>
+                                        <span class="home-all-products-price-new-price">16.200.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC5.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Hextech S - I5 11400F - GTX 1650Ti - 16GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">21.300.000₫</span>
+                                        <span class="home-all-products-price-new-price">16.600.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop14.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Laptop Acer Gaming Nitro 5 2021 Ryzen 5-5600H</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">27.200.000₫</span>
+                                        <span class="home-all-products-price-new-price">26.000.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop15.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-15%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">LAPTOP ASUS ROG Zephyrus G14 R9-5900HS</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">23.700.000₫</span>
+                                        <span class="home-all-products-price-new-price">20.100.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC6.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-20%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Laptop Acer Predator Triton 300</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">40.200.000₫</span>
+                                        <span class="home-all-products-price-new-price">36.000.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Monitor/newmonitor6.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-20%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Monitor</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Monitor Gaming AOC 24G2E IPS/ FHD/ 144Hz</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">34.300.000₫</span>
+                                        <span class="home-all-products-price-new-price">30.800.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Laptop/Laptop18.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-12%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Laptop</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Laptop MSI Strix SCAR GF65 Thin 10UE i7</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">42.600.000₫</span>
+                                        <span class="home-all-products-price-new-price">37.500.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/Monitor/newmonitor7.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-20%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">Monitor</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Monitor Gaming Asus ROG STRIX XG27UQ IPS/ 4K/ 144Hz</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">58.000.000₫</span><br>
+                                        <span class="home-all-products-price-new-price">52.050.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid--column--2-4">
+                                <div class="home-all-products-item">
+                                    <div class="all-product-top">
+                                        <a href="chitietsanpham.html">
+                                            <img class="home-all-products-img" src="images/PC/newPC7.png"></img>
+                                        </a>
+                                        <a class="buy-now" href="#" onclick="showDialog()">Mua ngay</a>
+                                        <div class="home-all-products-sale">
+                                            <span class="home-all-products-sale-percent">-20%</span>
+                                        </div>
+                                    </div>
+                                    <div class="home-all-products-cat">PC</div>
+                                    <a href="chitietsanpham.html">
+                                        <h4 class="home-all-products-name">Volibear S - I8 11400F - GTX 1650Ti - 16GB</h4>
+                                    </a>
+                                    <div class="home-all-products-price">
+                                        <span class="home-all-products-price-old-price">81.700.000₫</span><br>
+                                        <span class="home-all-products-price-new-price">75.710.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        filterSelection("all")
+
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("grid--column--2-4");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("filter");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <script src="Javascript/Sale.js"></script>
+
+    <br>
+    <footer class="footer">
+        <div id="wrapper-footer">
+            <div class="grid">
+                <div class="grid_row">
+                    <div class="grid_column-5-5">
+                        <h3 class="footer_super_heading">Sign Up To Our Newsletter</h3>
+                        <ul class="footer-list">
+                            <li class="footer_super_heading2">
+                                <p>Be the first to hear about the latest offers.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-5-5">
+                        <div class="footer_search_bar">
+                            <input type="text" placeholder="Your Email" class="search_text">
+                            <button style="border:none">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Infomation</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="aboutus.html" class="footer-item_link">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Privacy Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Terms</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="contactus.html" class="footer-item_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">PC Parts</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Add On Cards</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Hard Driver (Internal)</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Graphic Cards</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Desktop PCs</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Custom PCs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Severs</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">Tecs PCs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Laptops</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MSI Series</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">DELL Series</a>
+                                <a href="" class="footer-item_link">ACER Series</a>
+                            </li>
+                            <a href="" class="footer-item_link">ASUS Series</a>
+                            <li class="footer-item">
+                                <a href="" class="footer-item_link">MAC Series</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-2-4">
+                        <h3 class="footer_heading">Address</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-address">Address: 14 Nguyen Van Bao Str, District 4, Ho Chi Minh City</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">Phone:
+                                    <font color="#056ebe">(078) 880 605</font>
+                                </p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">We are open: Monday-Sunday: 9:00 AM - 5:30 PM</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-address">E-mail:
+                                    <font color="#056ebe">KZONE@gmail.com</font>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <hr width="100%">
+                <br>
+                <div class="grid_row">
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="#" class="footer-icon_link">
+                                    <i class="fab fa-facebook-square"></i>
+                                </a>
+                                <a href="#" class="footer-icon_link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <div class="footer-paidcard">
+                                    <img src="images/Logo/paypal.png" alt="">
+                                    <img src="images/Logo/visa.png" alt="">
+                                    <img src="images/Logo/maestro.png" alt="">
+                                    <img src="images/Logo/discover.png" alt="">
+                                    <img src="images/Logo/american-express.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid_column-3-3-3">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <p class="footer-copyright">Copyright © 2024 By KZOBE</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
+
+
